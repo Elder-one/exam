@@ -42,7 +42,16 @@ class Game:
 
     def draw(self):
         for i in range(self.size[0]):
-            print(' '.join(self.field[i]))
+            for j in range(self.size[1]):
+                if self.field[i][j] == '.':
+                    print('.', end = ' ')
+                if self.field[i][j] == '☼':
+                    print('☼', end = ' ')
+                if self.field[i][j] == '☒':
+                    print('☒', end = ' ')
+                if self.field[i][j] == '*':
+                    print('*', end = ' ')
+            print()
 
 
     def find_way(self, pos, way, hp):
