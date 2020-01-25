@@ -51,6 +51,8 @@ class Game:
                     print('☒', end = ' ')
                 if self.field[i][j] == '*':
                     print('*', end = ' ')
+                if self.field[i][j] == '$':
+                    print('$', end = ' ')
             print()
 
 
